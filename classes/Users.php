@@ -19,7 +19,7 @@ class Users{
    public function formatDate($date){
      // date_default_timezone_set('Asia/Dhaka');
       $strtime = strtotime($date);
-    return date('m-d-Y', $strtime);
+    return date('m/d/Y', $strtime);
    }
 
 
