@@ -243,6 +243,12 @@ class Users{
        $stmt3->bindValue(':id', $isClaimed);
        $result3 = $stmt3->execute();
 
+       echo "<script>location.href='ListItem.php';</script>";
+       Session::set('msg', '<div class="alert_frame"><div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
+       <i class="fas fa-check-circle" style="font-size:44px; color:green;"></i></i>
+ <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fas fa-times"></i></a>
+       <strong>Data has been set as claimed!</strong>!</div></div>');
+
       //  $data = ['claimantNameC' => $claimantNameC];
         if ($result || $result2 || $result3) {
           $sql1 = "DELETE FROM tbl_found WHERE id = :id ";
