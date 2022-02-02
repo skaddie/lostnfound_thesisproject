@@ -51,7 +51,7 @@ CREATE TABLE `tbl_claimed` (
 
 INSERT INTO `tbl_claimed` (`id`, `claimantNameC`, `dateClaimedC`, `uniqidFound`, `uniqidFinder`, `finderNameF`, `finderPhoneNumber`, `uniqidItem`, `itemNameF`, `itemDescF`, `uniqidSerial`, `dateFound`, `locationFoundF`, `isClaimed`, `created_at`) VALUES
 (26, 'Van Omar', '2022-02-02 17:34:41', 'found_61fac0a48522e', 'finder_61fac0a48522f', 'asdasdasdasd', '12312312312', 'item_61fac0a485230', 'asdasdasd', 'asdasdasd', '161fac0a485231', '02/24/2022', 'asdasdasd', 1, '2022-02-02 17:34:28'),
-(32, 'Jadeile Edo', '2022-02-02 17:52:15', 'found_61ba5973594e3', 'finder_61ba5973594e4', 'Nilo Vincent', '09551189522', 'item_61ba5973594e5', 'Samsung s10 edge', 'glossy blue', '161ba5973594e6', '2021-12-08', 'Room 702', 1, '2022-02-02 17:45:32');
+(32, 'Jadeile Edo', '2022-02-02 17:52:15', 'found_61ba5973594e3', 'finder_61ba5973594e4', 'Nilo Vincent', '09551189522', 'item_61ba5973594e5', 'Samsung s10 edge', 'glossy blue', '161ba5973594e6', '2021/12/08', 'Room 702', 1, '2022-02-02 17:45:32');
 
 -- --------------------------------------------------------
 
@@ -83,10 +83,10 @@ CREATE TABLE `tbl_found` (
 
 INSERT INTO `tbl_found` (`id`, `claimantNameC`, `dateClaimedC`, `uniqidFound`, `uniqidFinder`, `finderNameF`, `finderPhoneNumber`, `uniqidItem`, `itemNameF`, `itemDescF`, `uniqidSerial`, `dateFound`, `locationFoundF`, `isClaimed`, `created_at`) VALUES
 (27, NULL, NULL, 'found_61fac29455eaf', 'finder_61fac29455eb0', 'Nilo Vincent Tradio', '09954118764', 'item_61fac29455eb1', 'Realme 5 Pro', 'Matte Red', '161fac29455eb2', '01/30/2022', 'Room 301', 0, '2022-02-02 17:42:44'),
-(28, NULL, NULL, 'found_61b9c30fb7c13', 'finder_61b9c30fb7c14', 'Philip Jay', '09382230089', 'item_61b9c30fb7c15', 'Xiaomi', 'Black', '161b9c30fb7c16', '2021-12-15', 'Office', 0, '2022-02-02 17:45:32'),
-(29, NULL, NULL, 'found_61b9c32891ad2', 'finder_61b9c32891ad3', 'Van Omar', '09382230089', 'item_61b9c32891ad4', 'Huawei', 'Red', '161b9c32891ad5', '2021-12-15', 'Room 308', 0, '2022-02-02 17:45:32'),
-(30, NULL, NULL, 'found_61b9cc0b3f2a5', 'finder_61b9cc0b3f2a6', 'John Albert', '09123123123', 'item_61b9cc0b3f2a7', 'Razer', 'Black Shark', '161b9cc0b3f2a8', '2021-12-09', 'Ground Floor bench', 0, '2022-02-02 17:45:32'),
-(31, NULL, NULL, 'found_61b9cec2ea6a9', 'finder_61b9cec2ea6aa', 'Lorena Mae', '09555111888', 'item_61b9cec2ea6ab', 'Macbook Air Pro', 'Slim Gray', '161b9cec2ea6ac', '2021-12-17', '5th Floor Library', 0, '2022-02-02 17:45:32');
+(28, NULL, NULL, 'found_61b9c30fb7c13', 'finder_61b9c30fb7c14', 'Philip Jay', '09382230089', 'item_61b9c30fb7c15', 'Xiaomi', 'Black', '161b9c30fb7c16', '2021/12/15', 'Office', 0, '2022-02-02 17:45:32'),
+(29, NULL, NULL, 'found_61b9c32891ad2', 'finder_61b9c32891ad3', 'Van Omar', '09382230089', 'item_61b9c32891ad4', 'Huawei', 'Red', '161b9c32891ad5', '2021/12/15', 'Room 308', 0, '2022-02-02 17:45:32'),
+(30, NULL, NULL, 'found_61b9cc0b3f2a5', 'finder_61b9cc0b3f2a6', 'John Albert', '09123123123', 'item_61b9cc0b3f2a7', 'Razer', 'Black Shark', '161b9cc0b3f2a8', '2021/12/09', 'Ground Floor bench', 0, '2022-02-02 17:45:32'),
+(31, NULL, NULL, 'found_61b9cec2ea6a9', 'finder_61b9cec2ea6aa', 'Lorena Mae', '09555111888', 'item_61b9cec2ea6ab', 'Macbook Air Pro', 'Slim Gray', '161b9cec2ea6ac', '2021/12/17', '5th Floor Library', 0, '2022-02-02 17:45:32');
 
 -- --------------------------------------------------------
 
