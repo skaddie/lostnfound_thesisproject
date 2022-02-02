@@ -221,20 +221,21 @@ class Users{
       $claimantNameC = $data['claimantNameC'];
 
       $sql = "INSERT INTO tbl_claimed SELECT * FROM tbl_found WHERE id=:id";
-      $sql2 = "UPDATE tbl_claimed SET
+      $stmt = $this->db->pdo->prepare($sql);
+      $stmt->bindValue(':id', $isClaimed);
+      $result = $stmt->execute();
 
-      isClaimed=:isClaimed
-      WHERE id = :id";
-       $stmt = $this->db->pdo->prepare($sql);
+
+
+       $sql2 = "UPDATE tbl_claimed SET
+       isClaimed=:isClaimed
+       WHERE id = :id";
        $stmt2 = $this->db->pdo->prepare($sql2);
-       $stmt->bindValue(':id', $isClaimed);
        $stmt2->bindValue(':isClaimed', 1);
        $stmt2->bindValue(':id', $isClaimed);
-       $result = $stmt->execute();
        $result2 = $stmt2->execute();
 
        $sql3 = "UPDATE tbl_claimed SET
-
        claimantNameC=:claimantNameC
        WHERE id = :id";
        $stmt3 = $this->db->pdo->prepare($sql3);
