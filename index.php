@@ -104,6 +104,11 @@ if (isset($updateUser)) {
     </style>
   </head>
     <body>
+    <?php
+    $getUinfo = $users->getUserInfoById($userid);
+    if ($getUinfo) {
+      
+     ?>
        <section class="bckground">
           <div class="IMGLOG">
             <img class="bckgroundimg" src="image/profile.png" alt="">
@@ -159,32 +164,17 @@ if (isset($updateUser)) {
                       <div class="row mt-3">
                           <div class="col-md-12"><label class="labels">Full Name</label>
                           <span  type="text" id="editFullName" class="form-control FullName_prof disabled" placeholder="full name" value="" required>
-                            <?php
-                              $name = Session::get('name');
-                              if (isset($name)) {
-                                echo $name;
-                              }
-                            ?>
+                          <?php echo $getUinfo->name; ?>
                             </span>
                           </div>
                           <div class="col-md-12"><label class="labels">Username</label>
                           <span  id="editdisplayName" type="text" class="form-control displayName_prof disabled" placeholder="display name" value="" required> 
-                            <?php
-                            $username = Session::get('username');
-                            if (isset($username)) {
-                              echo $username;
-                            }
-                            ?>
+                          <?php echo $getUinfo->username; ?>
                           </span>
                         </div>
                           <div class="col-md-12"><label class="labels">Email</label>
                           <span  id="editemail" type="text" class="form-control email_prof disabled" placeholder="email" value="" required>
-                            <?php
-                              $email = Session::get('email');
-                              if (isset($email)) {
-                                echo $email;
-                              }
-                            ?>
+                          <?php echo $getUinfo->email; ?>
                             </span>
                           </div>
                           
@@ -246,7 +236,10 @@ if (isset($updateUser)) {
         </form>
         </div>
       </div>
-      
+      <?php }else{
+
+header('Location:index.php');
+} ?>
   </body>
 </html>
 
