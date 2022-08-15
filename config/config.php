@@ -8,6 +8,6 @@
 
 // REMOTE CONNECTION
 define('DB_HOST', 'remotemysql.com');
-define('DB_NAME', '6DRA0oR09e');
-define('DB_USER', '6DRA0oR09e');
-define('DB_PASS', 'vQb5k5Z6hU');
+define('DB_NAME', 'gvplfyy4DH');
+define('DB_USER', 'gvplfyy4DH');
+define('DB_PASS', 'HC694Knw3r');
